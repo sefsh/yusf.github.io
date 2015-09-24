@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 5%;
   background-attachment: fixed;
   font-family: Helvetica, sans-serif;
   background-image: linear-gradient(#FBEFC7, #99F4F1);
@@ -37,11 +37,13 @@ h2 {
 }
 
 .wrapper {
-  padding: 0 5%;
 }
 
 .card {
-  margin: 20% auto 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 90%;
   max-width: 360px;
   background: white;
@@ -71,13 +73,12 @@ h2 {
 }
 
 ul {
-  margin-left: 1em;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-  display: inline;
-  float: left;
-  /*margin-left: -3em;*/
+  display: inline-block;
   list-style: none;
   white-space: nowrap;
 }
@@ -87,4 +88,8 @@ li {
   height: auto;
   opacity: .6;
   vertical-align: bottom;
+}
+
+a span {
+  margin-right: .5em;
 }
